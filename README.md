@@ -1,2 +1,2 @@
 # ocp-flask-demo
-Small demo for an OCP cluster deployment.
+Un aplicación python con flask para probar con Openshift.

@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: py-demo
+  name: py-demo
+spec:
+  selector:
+    matchLabels:
+      app: py-demo
+  template:
+    metadata:
+      labels:
+        app: py-demo
+      name: py-demo
+    spec:
+      containers:
+      - image: localhost/py-demo:latest
+        name: py-demo
+        ports:
+        - containerPort: 8080
+          hostPort: 8080
