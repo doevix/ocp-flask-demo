@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gunicorn --config=gunicorn_config.py app:app
+exec /usr/libexec/s2i/run
+
